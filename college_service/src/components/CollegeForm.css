@@ -1,0 +1,14 @@
+.form-container {
+  background: rgba(0,0,0,0.5); backdrop-filter: blur(12px);
+  padding:30px 35px; margin:20px auto; border-radius:20px; max-width:700px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.5); transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.form-container:hover { transform: translateY(-4px); box-shadow: 0 15px 35px rgba(0,0,0,0.6); }
+.form-container h2 { color:#facc15; font-size:1.5rem; margin-bottom:25px; }
+
+form { display:flex; flex-wrap:wrap; gap:18px; justify-content:space-between; }
+input { flex:1 1 45%; padding:12px; border-radius:10px; border:1px solid #facc15; background: rgba(255,255,255,0.1); color:#fff; font-size:0.95rem; transition: all 0.2s ease; }
+input:focus { outline:none; border-color:#facc15; box-shadow:0 0 8px rgba(250,204,21,0.5); }
+
+button { background: linear-gradient(135deg,#f59e0b,#fbbf24); color:#000; width:45%; margin-top:10px; border:none; border-radius:10px; cursor:pointer; font-weight:600; transition: all 0.2s ease-in-out; }
+button:hover { background: linear-gradient(135deg,#fbbf24,#f59e0b); transform:scale(1.05); }

@@ -1,0 +1,23 @@
+.college-list-container { margin-top:50px; text-align:center; }
+.college-list-container h2 { color:#facc15; margin-bottom:25px; font-size:1.6rem; }
+.no-data { color:#f0f0f0; font-size:1.1rem; }
+
+.college-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:25px; padding:10px; }
+
+.college-card {
+  background: rgba(0,0,0,0.6); color:#f0f0f0; border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.4); padding:25px 20px; transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity:0; transform:translateY(20px); animation: fadeIn 0.5s forwards;
+}
+@keyframes fadeIn { to { opacity:1; transform:translateY(0); } }
+.college-card:hover { transform:translateY(-10px) scale(1.03); box-shadow:0 20px 40px rgba(0,0,0,0.6); }
+
+.college-details { text-align:left; color:#f0f0f0; }
+.college-details h3 { color:#facc15; margin-bottom:10px; font-size:1.4rem; }
+.college-details p { margin:5px 0; font-size:0.95rem; line-height:1.4rem; display:flex; align-items:center; gap:6px; }
+
+.card-buttons { display:flex; justify-content:space-between; margin-top:18px; }
+.edit-btn { background: linear-gradient(135deg,#22c55e,#16a34a); color:white; flex:1; margin-right:10px; transition: all 0.2s ease; cursor:pointer; border:none; border-radius:8px; font-weight:600; }
+.edit-btn:hover { background: linear-gradient(135deg,#16a34a,#22c55e); transform:scale(1.05); }
+.delete-btn { background: linear-gradient(135deg,#ef4444,#dc2626); color:white; flex:1; transition: all 0.2s ease; cursor:pointer; border:none; border-radius:8px; font-weight:600; }
+.delete-btn:hover { background: linear-gradient(135deg,#dc2626,#ef4444); transform:scale(1.05); }
